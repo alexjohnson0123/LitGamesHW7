@@ -12,3 +12,19 @@ func _hide():
 	self.visible = false
 
 
+
+
+func _on_area_2d_body_entered(body):
+	_show()
+
+
+func _on_area_2d_body_exited(body):
+	_hide()
+
+
+func _on_open_door_button_button_down():
+	_show()
+
+
+func _on_close_door_button_button_down():
+	_hide()
